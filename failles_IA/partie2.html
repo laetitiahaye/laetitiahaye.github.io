@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+<!--
+	TXT by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Partie 2 - Failles de l'IA</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<div class="logo container">
+						<div>
+							<p>Les failles de l'IA</p>
+							<h1><a href="index.html" id="logo">Partie 2</a></h1>
+							
+						</div>
+					</div>
+				</header>
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Accueil</a></li>
+						<li>
+							<a href="partie1.html">Partie 1</a>
+							<ul>
+								<li><a href="#Attaques">Les attaques antagonistes...</a></li>
+								<li><a href="#Visuelles">...sur des données visuelles</a></li>
+								<!--<li>
+									<a href="#">Phasellus consequat</a>
+									<ul>
+										<li><a href="#">Lorem ipsum dolor</a></li>
+										<li><a href="#">Phasellus consequat</a></li>
+										<li><a href="#">Magna phasellus</a></li>
+										<li><a href="#">Etiam dolore nisl</a></li>
+									</ul>
+								</li>-->
+								<li><a href="#Textuelles">...sur des données textuelles</a></li>
+								<li><a href="#Audio">...sur des données audio</a></li>
+							</ul>
+						</li>
+						<li class="current"><a href="#">Partie 2</a></li>
+						<li><a href="partie3.html">Partie 3</a></li>
+						<li><a href="partie4.html">Partie 4</a></li>
+						<li><a href="conclusion.html">Conclusion</a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="content">
+
+									<!-- Content -->
+										<a name="Attaques"></a> 
+										<article class="box page-content">
+
+											<header>
+												<h2>Le manque de transparence des algorithmes d'IA</h2>
+												<p>Mauvais raisonnements, biais algorithmiques...</p>
+												<!--<ul class="meta">
+													<li class="icon fa-clock">5 days ago</li>
+													<li class="icon fa-comments"><a href="#">1,024</a></li>
+												</ul> -->
+											</header>
+
+											<section>
+												<p>
+													Cette partie ainsi que les parties 3 et 4 traitent de problèmes autour de l'IA qui ne sont pas nécessairement intentionnels, mais qui pour autant peuvent limiter l'utilisation de l'IA pour certaines applications s'ils ne sont pas pris en compte.<br/><br/>
+
+													Le manque de transparence est un problème important de l’intelligence artificielle. Si des décisions impactant des personnes sont prises suite à la prédiction d’un système d’IA, il faut pouvoir s’assurer que le raisonnement qu’il suit est correct et impartial. Or ce n’est pas toujours le cas, en particulier dans le domaine du deep learning (réseaux de neurones profonds) où les modèles sont considérés comme des « black box ». 
+													<br/><br/>
+
+
+													Une première partie met en avant le fait qu'on ne puisse pas faire aveuglément confiance aux prédictions réalisées par des IA en montrant qu'elles ne <a href="#Stupide">raisonnent pas comme on s'y attend</a>. Une deuxième partie donne quelques exemples où on a fait confiance a des algorithmes d'apprentissage automatiques qui étaient <a href="#biais"> biaisés par conception ou entraînement sur de mauvais jeux de données</a> et les conséquences néfastes qui en ont découlé. 
+													</p>
+											</section>
+
+											<section>
+												<span class="image featured"><img src="images/pic05.jpg" alt="" /></span>
+												
+											</section>
+
+											<section>
+												<a name="Stupide"></a>
+												<h2 class="major"><span></span></h2>
+												<h3>Les IA ne raisonnent pas comme nous</h3>
+												<p><br/>
+													Voici un exemple qui illustre l’importance de vérifier ce sur quoi s’appuie une IA pour prendre une décision. On donne à un réseau de neurones des images de huskies et de loups en entrée. Son objectif est d’attribuer une étiquette « loup » ou « huskie » à chaque image en fonction de l’animal qui est dessus. On constante que les prédictions réalisées par le réseau sont justes dans la grande majorité des cas. Cependant, si on regarde de plus près et qu’on cherche les zones de l’image sur lesquelles le réseau de neurones s’appuie pour faire ses prédictions (cf les parties non grisées des images de droite de chaque paire), on constate que son raisonnement n’est pas celui voulu. En effet, il se sert essentiellement des arrière-plans pour déterminer le type d’animal : s’il voit de la neige, il classe l’image comme "loup" et s’il n’en voit pas, il classe l’image comme « huskie ». Dans la plupart des cas, il ne tient pas compte de l'animal pour attribuer une étiquette.</p>
+
+													<span class="image centered">><img src="images/MTloups.jpg" alt="MT_exemple1" /></span>
+
+													<p>Pour remédier à ce problème, il faudrait qu’il y ait dans le jeu de données d’entraînement plus de huskies avec de la neige en arrière-plan et plus de loups sans neige, ce qui n’est pas forcément évident.<br/><br/><br/>
+
+
+													La vidéo ci-dessous met également en avant le fait que les modèles ne raisonnent pas  comme nous, cette fois-ci en se concentrant sur un autre aspect et en prenant un exemple en Reinforcement Learning (apprentissage par renforcement, une branche du machine learning). Il s'agit d'un extrait d'un Ted Talk réalisé par Janelle Shane. L'extrait pertinent correspond aux minutes 2:08 à 3:25 (mais vous pouvez regarder plus si vous aves le temps!)</p>
+
+
+													<iframe width="560" height="315" src="https://www.youtube.com/embed/OhCzX0iLnOc?start=128" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+													<p><br/>  Ce que Janelle Shane explique est que le danger de l'IA vient du fait que ces systèmes intelligents font exactement ce qu'on leur demande de faire au lieu de ce qu'on vodrait ou ce à quoi on s'attendrait qu'ils fassent. La qualité des résultats dépend donc de si on a bien défini le problème ou non.<br/><br/> 
+
+													L'exemple des loups et du robot aux jambes très longues ont montré que si le problème que l'on souhaite résoudre grâce à une intelligence artificielle n'est pas parfaitement défini, on ne peut pas partir du principe que les résultats qu'elle donnera seront satisfaisants d'un point de vue humain. Ils peuvent paraître bons (plus de 90% de réussite dans le cas de la classification des loups et huskies, objectif d'arriver au point B atteint dans le cas des jambes) tout en cachant des défauts. Ces défauts ne seront visibles que si on s'intéresse au fonctionnement du système intelligent utilisé pour résoudre la tâche. <br/><br/>
+
+													Les problèmes soulevés ici sont des problèmes bien connus puisque l'adoption de l’IA par le grand public dépend de la confiance qui lui est accordée. Deux tendances qui tentent de les résoudre se dégagent. Premièrement, les entreprises revalorisent des modèles qui sont interprétables tels que l'algorithme des Random Forests par rapport à d'autres modèles un peu plus précis mais dont les décisions ne sont pas explicables. Deuxièmement, le domaine de la visualisation des données pour l'interprétation des algorithmes de machine learning est en expansion. L'image ci-dessous est tirée d'une étude sur un réseau de neurone convolutionnel utilisé pour la classification d'images. Des chercheurs ont identifié les sous-images qui activent un neurone donné, rendant le réseau plus compréhensible.</p> 
+
+													<span class="image centered">><img src="images/neurone.jpg" alt="viz_neurones" /></span>
+
+											</section>
+
+											<section>
+												<h3>Un petit résumé</h3>
+												<p>
+													- Utiliser les résultats fournis par une intelligence artificielle sans comprendre comment elle les a obtenu est risqué : en définissant le problème qu'on veut qu'elle résolve, on ne définit pas le raisonnement qu'elle va suivre. <br/>
+													- Privilégier des modèles facilement interpétables et se servir de visualisations pour ceux qui ne le sont pas sont d'éventuelles options pour contrer ce risque.
+													</p>
+											</section>
+
+											<section>
+												<a name="Biais"></a>
+												<h2 class="major"><span></span></h2>
+												<h3>Certaines IA sont discrimanantes</h3>
+												<p>
+													Les algorithmes d’apprentissage automatique sont souvent entrainés sur un jeu de données rassemblées par une personne ou sur des données historiques. On souhaite pendant la phase d’entraînement que ces algorithmes intègrent au mieux les décisions qui ont été prises afin d’être capables de les reproduire dans de nouvelles situations. Cela signifie que si des biais existent dans le jeu de données qui servent à entraîner le modèle, ces biais vont être reproduits voir amplifiés dans le modèle créé. Lorsque le modèle sera utilisé, il donnera donc des prédictions discriminantes.<br/><br/>
+
+													Pour illustrer cela, considérons une IA créée pour classer des images de vêtements par catégorie. Si on entraîne cette IA sur une base d’images constituée par quelques américains, on risque d’obtenir des biais tels que le suivant : une robe de mariée occidentale sera correctement classée alors qu’une robe de mariée indienne sera classée en « déguisement ». En effet, on peut supposer que la base de données d’entraînement contenait, parmi toutes les images de robes de mariées, essentiellement des images comme celle de gauche. </p> 
+
+
+													<span class="image centered">><img src="images/robe.jpg" alt="robe" /></span>
+													
+													<p> Ce type de biais est récurrent dans les IA, les exemples les plus connus étant dans les cas de police prédictive, de justice prédictive et d’accès aux soins. Il faut noter que même si les variables sensibles (par exemple sexe, âge, origine, etc) n’apparaissent pas explicitement dans les données d’entraînement, les prédictions peuvent quand même être biaisées puisque ces informations sont encodées implicitement à travers les autres variables. <br/><br/>
+
+													Voici un cas concret qui concerne le recrutement prédictif. En 2014, Amazon a développé une intelligence artificielle pour les aider avec leur processus de recrutement. Elle avait pour but de trier les CV des candidats qui postulaient. Selon leur qualité estimée, l’intelligence artificielle leur attribuait une note de 1 à 5. Il s’avère que leur système était discriminant à l’égard des femmes. En effet, tous les CV qui comportaient des éléments permettant à l’IA de comprendre qu’il s’agissait d’une femme (par exemple les termes « capitaine de l’équipe de foot féminine ») obtenaient une mauvaise note. Ce biais est lié à l’entraînement de l’IA, qui s’est fait avec les profils des personnes employées dans l’entreprise entre 2004 et 2014. En effet, la plupart de ces profils qui ont constitué le jeu d’entraînement étaient des hommes. L’IA a donc appris que sélectionner des candidats plutôt que des candidates était préférable. Amazon a arrêté d’utiliser cette IA qu’à partir de 2017.</p>
+													
+													
+													<span class="image centered">><img src="images/Bamazon.jpg" alt="Amazon" /></span>
+													<p>
+													Voici un dernier exemple pour illustrer ces biais. Le projet "Gender Shades" a étudié les performances de cinq technologies de reconnaissance faciale et ont mis en avant des disparités dans la précision des systèmes de reconnaissance faciale en fonction de la couleur de peau et du sexe. On constate une faible précision pour les femmes à peau foncée contre une précision élevée pour les hommes à peau claire. Depuis, les entreprises ont réduit ces disparités en collectant davantage de données pour les groupes démographiques qui subissaient une faible précision.
+													</p>
+													
+													<span class="image centered">><img src="images/graphe.jpg" alt="graphe" /></span>
+
+													
+											</section>
+											<section>
+												<h3>Un petit résumé</h3>
+												<p>
+													- Les exemples vus se résument par l'expression "Garbage In, Garbage Out" : si les données d'entraînement de l'IA comportent des biais ou sont incomplètes, les prédictions qu'elle fera seront biaisées et mauvaises.
+													</p>
+											</section>									
+											
+										</article>
+
+								</div>
+							</div>
+							<div class="col-12">
+								
+								<!-- Features -->
+									<section class="box features">
+										
+										<h2 class="major"><span>Conclusion de la partie 2</span></h2>
+										<section>
+												<p>
+													- Ce n'est pas parce qu'un algorithme d'apprentissage a de bons scores lorsqu'on le teste que le raisonnement qu'il suit est juste. La prédiction qu'il produit peut ne pas avoir de valeur.  <br/><br/>
+													- Définir le plus précisément possible les contraintes du problème que l'on veut résoudre par IA permet d'éviter qu'il apprene des comportements trop absurdes (par rapport à notre perspective de la tâche à accomplir).<br/><br/>
+													-Des biais peuvent être introduits dans les systèmes d'IA au moment de leur conception aussi bien que de leur entraînement. Un algorithme d’apprentissage auquel on fournit des données de mauvaise qualité ne pourra rien en faire d’autre que des prédictions de mauvaise qualité.
+
+												</p>
+										</section>
+										
+										<div>
+											<div class="row">
+																							
+												<div class="col-12">
+													<ul class="actions">
+														<li><a href="partie3.html" class="button large">Partie 3</a></li>
+														<li><a href="index.html" class="button alt large">Accueil</a></li>
+													</ul>
+												</div>
+
+											</div>
+										</div>
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-12">
+
+								<!-- About -->
+									<section>
+										<h2 class="major"><span>Credit</span></h2>
+										<p>
+											Ce site a été réalisé à partir d'un template "TXT" conçu par <a href="http://twitter.com/ajlkn">AJ</a> pour <a href="http://html5up.net">HTML5 UP</a> dans le cadre du MOS 4.4 "Nouvelles Technologie de l'Information et de la Communication" de l'ECL | Laetitia Haye
+										</p>
+									</section>
+
+							</div>
+							
+						</div>
+
+						<!-- Copyright -->
+							<!--<div id="copyright">
+								<ul class="menu">
+									<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								</ul>
+							</div> -->
+
+					</div>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<!--
+	TXT by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Partie 3 - Failles de l'IA</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<div class="logo container">
+						<div>
+							<p>Les failles de l'IA</p>
+							<h1><a href="index.html" id="logo">Partie 3</a></h1>
+							
+						</div>
+					</div>
+				</header>
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Accueil</a></li>
+						<li>
+							<a href="partie1.html">Partie 1</a>
+							<ul>
+								<li><a href="#Attaques">Les attaques antagonistes...</a></li>
+								<li><a href="#Visuelles">...sur des données visuelles</a></li>
+								<!--<li>
+									<a href="#">Phasellus consequat</a>
+									<ul>
+										<li><a href="#">Lorem ipsum dolor</a></li>
+										<li><a href="#">Phasellus consequat</a></li>
+										<li><a href="#">Magna phasellus</a></li>
+										<li><a href="#">Etiam dolore nisl</a></li>
+									</ul>
+								</li>-->
+								<li><a href="#Textuelles">...sur des données textuelles</a></li>
+								<li><a href="#Audio">...sur des données audio</a></li>
+							</ul>
+						</li>
+						<li><a href="partie2.html">Partie 2</a></li>
+						<li class="current"><a href="partie3.html">Partie 3</a></li>
+						<li><a href="partie4.html">Partie 4</a></li>
+						<li><a href="conclusion.html">Conclusion</a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="content">
+
+									<!-- Content -->
+										<a name="Attaques"></a> 
+										<article class="box page-content">
+
+											<header>
+												<h2>La génération de contenu par l'IA</h2>
+												<p>spear phishing, deepfakes, désinformation, chatbots...</p>
+												<!--<ul class="meta">
+													<li class="icon fa-clock">5 days ago</li>
+													<li class="icon fa-comments"><a href="#">1,024</a></li>
+												</ul> -->
+											</header>
+
+											<section>
+												<p>
+													Cette partie traite d’une capacité récente des systèmes d’IA :  celle de générer automatiquement du contenu réaliste. L’intelligence artificielle est désormais capable grâce à des GAN (Genrative Adversarial Networks ou Réseaux Adverses Génératifs) de synthétiser des images, des vidéos, du son et même du texte. La génération de contenu par IA a permis de nouvelles applications bénéfiques mais peut également être source de risques. Cette partie donne des exemples de problèmes liés au <a href="#spear"> spear phishing</a>, aux <a href="#deepfakes"> deepfakes</a>, à la <a href="#desinfo"> désinformation</a> en général et aux <a href="#chatbots">chatbots</a> (mais d’autres problèmes non présentés ici existent, cf sources pour aller plus loin).
+												</p>
+											</section>
+
+											<section>
+												<span class="image featured"><img src="images/pic05.jpg" alt="" /></span>
+												<p>
+													Aujourd’hui il devient difficile de distinguer des images synthétiques par rapport à de vrais photos, ce qui n’était pas le cas il y a quelques années. L’image ci-dessous montre les progrès réalisés pour la création de visages. 
+
+													<span class="image centered">><img src="images/progres.jpg" alt="progres GAN" /></span>
+													
+													De même, la synthèse automatique de texte devient de plus en plus réaliste. Vous pouvez expérimenter le modèle GPT-2 sur <a href="https://app.inferkit.com/demo">ce site </a>(vous entrez le début d’un texte ou dialogue et l’IA invente la suite).
+												</p>
+											</section>
+
+											<section>
+												<a name="spear"></a>
+												<h2 class="major"><span></span></h2>
+												<h3>Le spear phishing par synthèse vocale</h3>
+												<p>
+													Une menace susceptible de se développer suite aux progrès réalisés en génération de contenu est celle du spear phishing (utiliser des messages personnalisés ou se faire passer pour un contact afin de soutirer des informations sensibles ou de l'argent à des personnes). <br/><br/>
+
+													En 2019, une société d'énergie britannique anonyme a transféré 200 000£ à des criminels qui ont utilisé l’IA pour synthétiser la voix du directeur général de la société mère allemande lors d'un appel téléphonique. On peut imaginer qu’il va devenir de plus en plus facile de générer des messages qui sont suffisamment plausibles pour se faire passer pour quelqu’un d’autre digne de confiance dans les années à venir, ce qui constitue une vraie menace. 
+													</p>
+											</section>
+
+											<section>
+												<a name="deepfakes"></a>
+												<h2 class="major"><span></span></h2>
+												<h3>Les deepfakes</h3>
+												<p>
+													Les deepfakes sont un autre problème qui découle des progrès réalisés en générations de contenu. <br/><br/>
+									
+													Des vidéos synthétisés par des GAN mais qui paraissent réalistes circulent déjà. Elles concernent principalement des personnes célèbres puisque l’entraînement du modèle nécessite des clips audio et vidéo du sujet. A titre d’exemple, en voici une d’Obama et une de la reine d’Angleterre.</p>
+
+													<iframe width="560" height="315" src="https://www.youtube.com/embed/dw6Zj2FDuzA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+													<iframe width="560" height="315" src="https://www.youtube.com/embed/IvY-Abd2FfM?start=203" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+													<p><br/><br/>La plupart des vidéos deepfakes sont produits pour faire rire ou choquer sans intention de tromper les spectateurs. En effet, créer un deepfake qui soit vraiment réaliste nécessite de grandes quantités de données pour l’entraînement du modèle ainsi que des compétences techniques. Ainsi, d’autres méthodes plus simples et plus rentables existent si l’objectif est de cibler certaines personnes ou d’influencer l’opinion publique.  <br/><br/>
+
+													Pour autant, il y a trois problèmes à soulever. Premièrement, il est possible qu’avec le temps les vidéos deepfakes très réalistes deviennent plus facile à réaliser. Cela est dangereux puisque ces vidéos attribuent des propos à des personnes influentes (stars, chefs d’état…) qui ne les ont jamais tenus. Elles peuvent donc, en plus de nuire à la réputation de ces personnes, faire passer des messages qui ne sont pas les leurs. Pour pallier ce risque, il faudrait améliorer les performances des systèmes qui détectent ce type de vidéos. <br/><br/>
+
+													Deuxièmement, il faut noter que même si les deepfakes réalistes sont peu développés, le simple fait qu’ils puissent exister suffit à compromettre ou affaiblir certaines sources d'autorité. L’existence de ce type de vidéo nuit à la confiance accordée aux reportages d’actualité et contribuent à créer un climat propice à la désinformation. De plus, les deepfakes peu convaincants (vidéos qui sont rapidement identifiées comme fausses par ceux qui les visionnent) ou les shallow fakes (vidéos réelles mais qui ont été modifiées par exemple en supprimant des images ou en accélérant la vidéo pour modifier l'impression qu'on a de ce qu'il s'est passé) deviennent facilement viraux et peuvent être très dommageables. L'extrait de vidéo suivante présente un shallow fake ou quelques images modifiées donnent un ressenti différent des événements (minutes 0:54 à 1:42) </p>
+
+													<iframe width="560" height="315" src="https://www.youtube.com/embed/6RIVgXXOY6M?start=54" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+													<p><br/>Troisièmement, sans aller jusqu’à faire de longues vidéos, de simples extraits très brefs peuvent constituer une menace de taille. En effet, de tels extraits ne sont plus utilisés pour influencer l’opinion publique mais pour d’autres usages malveillants tels que le déverrouillage de systèmes qui utilisent des authentifications par reconnaissance faciale.</p>
+
+													<span class="image centered">><img src="images/ID.jpg" alt="deverouillage" /></span>
+
+													
+											</section>
+
+											<!--<section>
+												<h3>Un petit résumé</h3>
+												<p>
+												</p>
+											</section>-->
+
+											<section>
+												<a name="desinfo"></a>
+												<h2 class="major"><span></span></h2>
+												<h3>La désinformation : une conséquence de l'IA</h3>
+												<p>
+													De manière plus générale, le problème principal de la génération de contenu par l’IA survient lorsque ce contenu est destiné à influencer l'opinion publique, souvent par le biais d’une diffusion massive sur les réseaux sociaux. <br/><br/>
+
+													Les fake news (informations fausses et manipulatrices présentées comme vraies et largement diffusées) se multiplient et constituent une vraie menace. Cela rejoint aussi le problème de la génération de contenu à grande échelle par des bots. Dans certains cas, des bots sont utilisés pour inonder les canaux d'information avec des informations qui ne sont pas nécessairement fausses et peuvent être simplement distrayantes mais qui, de par leur quantité, rendent plus difficile l'accès à des informations plus pertinentes. Sans entrer dans les détails, on peut aussi évoquer les campagnes de désinformation automatisées et personnalisées. Le documentaire Netflix « The Great Hack » sur Cambridge Analytica explique comment des citoyens américains dans les circonscriptions électorales sensibles ont été ciblés avec des messages personnalisés dans le but d’influencer leur vote.<br/><br/>
+
+													Pour pallier ces problèmes, des moyens techniques se développent progressivement pour essayer de détecter les deepfakes, la désinformation ou la présence massive de robots sur les réseaux sociaux. Par exemple, le « Fake News Challenge » dont l’objectif est de détecter automatiquement les fake news est un concours qui devrait encourager la recherche de nouvelles solutions à cet enjeu. Par ailleurs, certaines techniques reposent sur des « signatures digitales » qui permettent de certifier que des images et vidéos n’ont pas été altérées, ou qu’une information diffusée dans un média les médias a effectivement été produit par la personne ou l'organisation concernée.  
+													</p>
+													
+																									
+											</section>
+											<!--<section>
+												<h3>Un petit résumé</h3>
+												<p>
+													
+												</p>
+											</section>-->
+
+											<section>
+												<a name="chatbots"></a>
+												<h2 class="major"><span></span></h2>
+												<h3>Des problèmes avec le texte généré par des chatbots</h3>
+												<p>
+													Enfin, d’autres effets néfastes liés à la génération de contenu par IA viennent du manque de précision au moment de créer le modèle, qui se traduit par un manque de contrôle sur ce qui est généré. En voici un exemple. <br/><br/>
+
+													En 2016, Microsoft a créé un robot appelé Tay IA qui devait participer à des conversations sur des réseaux sociaux et des applications de messagerie (selon leurs termes, « conçu pour engager et divertir les gens là où ils se connectent en ligne par le biais de conversations informelles et amusantes »). Ce robot était destiné aux Américains de 18 à 24 ans et en mars 2016, Microsoft l’a testé en le déployant sur Twitter pour voir comment il interagissait avec les humains. Cependant, les phrases générées, bien que correctes au début, ont rapidement dérapé suite aux questions et paroles d’autres utilisateurs qui voulaient tester les limites de ce bot et le pousser à tenir certains propos, comme on peut voir sur l’image ci-dessous. Au bout de 8h, Microsoft a préféré supprimer ce bot parce qu’il était devenu raciste et générait des réponses inappropriées. Cet exemple n’est pas unique et montre que bien qu’un bot puisse générer du texte, il n’a pas les mêmes propriétés qu’un humain et les autres utilisateurs vont naturellement vouloir tester ses limites voir en abuser. </p>
+
+													<span class="image centered">><img src="images/tay.jpg" alt="tay" /></span>
+
+											</section>
+											<!--<section>
+												<h3>Un petit résumé</h3>
+												<p>
+													
+												</p>
+											</section>-->
+
+											
+										</article>
+
+								</div>
+							</div>
+							<div class="col-12">
+
+								<section class="box features">
+										
+										<h2 class="major"><span>Conclusion de la partie 3</span></h2>
+										<section>
+												<p>
+													- Le rythme des progrès réalisés en génération de contenu par IA est impressionnant. Cela implique de nouveaux risques. <br/>
+													- La génération de son grâce aux GAN rend plus facile le fait de se faire passer pour des personnes spécifiques à des fins frauduleuses. <br/>
+													- La génération de vidéos, d'images ou d’informations trompeuses est problématique à différents niveaux : elle constitue une menace pour la personne ciblée et à plus grande échelle pour la société en facilitant la désinformation, empêchant l’accès à la vérité, manipulant des comportements…<br/>
+													- L’exemple du chatbot de Microsoft montre que même lorsque ceux qui utilisent l’intelligence artificielle pour générer du contenu n’ont pas de mauvaises intentions, la situation peut rapidement déraper.
+
+												</p>
+										</section>
+
+												</div>
+												<div class="col-12">
+													<ul class="actions">
+														<li><a href="partie4.html" class="button large">Partie 4</a></li>
+														<li><a href="index.html" class="button alt large">Accueil</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-12">
+
+								<!-- About -->
+									<section>
+										<h2 class="major"><span>Credit</span></h2>
+										<p>
+											Ce site a été réalisé à partir d'un template "TXT" conçu par <a href="http://twitter.com/ajlkn">AJ</a> pour <a href="http://html5up.net">HTML5 UP</a> dans le cadre du MOS 4.4 "Nouvelles Technologie de l'Information et de la Communication" de l'ECL | Laetitia Haye
+										</p>
+									</section>
+
+							</div>
+							
+						</div>
+
+						<!-- Copyright -->
+							<!--<div id="copyright">
+								<ul class="menu">
+									<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								</ul>
+							</div> -->
+
+					</div>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

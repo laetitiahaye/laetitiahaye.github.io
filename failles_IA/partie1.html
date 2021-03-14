@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<!--
+	TXT by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Partie 1 - Failles de l'IA</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<div class="logo container">
+						<div>
+							<p>Les failles de l'IA</p>
+							<h1><a href="index.html" id="logo">Partie 1</a></h1>
+							
+						</div>
+					</div>
+				</header>
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Accueil</a></li>
+						<li class="current">
+							<a href="#">Partie 1</a>
+							<ul>
+								<li><a href="#Attaques">Les attaques antagonistes...</a></li>
+								<li><a href="#Visuelles">...sur des données visuelles</a></li>
+								<!--<li>
+									<a href="#">Phasellus consequat</a>
+									<ul>
+										<li><a href="#">Lorem ipsum dolor</a></li>
+										<li><a href="#">Phasellus consequat</a></li>
+										<li><a href="#">Magna phasellus</a></li>
+										<li><a href="#">Etiam dolore nisl</a></li>
+									</ul>
+								</li>-->
+								<li><a href="#Textuelles">...sur des données textuelles</a></li>
+								<li><a href="#Audio">...sur des données audio</a></li>
+							</ul>
+						</li>
+						<li><a href="partie2.html">Partie 2</a></li>
+						<li><a href="partie3.html">Partie 3</a></li>
+						<li><a href="partie3.html">Partie 4</a></li>
+						<li><a href="conclusion.html">Conclusion</a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="content">
+
+									<!-- Content -->
+										<a name="Attaques"></a> 
+										<article class="box page-content">
+
+											<header>
+												<h2>Les Attaques Antagonistes</h2>
+												<!--<p>XXXXX</p>
+												<ul class="meta">
+													<li class="icon fa-clock">5 days ago</li>
+													<li class="icon fa-comments"><a href="#">1,024</a></li>
+												</ul> -->
+											</header>
+
+											<section>
+												<p>
+													Cette partie traite des attaques intentionnelles et préméditées sur des systèmes d’IA, et montre en quoi ces attaques peuvent être vraiment dangereuses.<br/><br/>
+													Plus particulièrement, elle se concentre sur les attaques antagonistes, une technique avancée qui exploite des failles dans la manière de fonctionner de l’IA pour détourner des systèmes d'apprentissage automatique d’habitude considérés comme fiables.
+												</p>
+											</section>
+
+											<section>
+												<span class="image featured"><img src="images/pic05.jpg" alt="" /></span>
+												<p>
+													Une attaque « antagoniste » (ou « adverse » ou « contradictoire », traductions de l’anglais « adversarial attack ») est un petit changement, soigneusement conçu, dans la façon dont les entrées sont présentées à un système d’IA pour modifier complètement sa sortie, ce qui l'amène à arriver en toute confiance à des conclusions manifestement fausses. <br/><br/>
+													L’idée d’une telle attaque n’est donc pas d’interférer avec le modèle en lui-même mais de jouer sur les données d’entrée. Tout comme nous humains pouvons être trompés par des illusions optiques sans que personne n’ait touché à nos yeux, il est possible de duper un agent artificiel sans intervenir sur le code du modèle. En revanche, de la même manière qu’il faut avoir une bonne connaissance du système visuel de l’homme pour construire des illusions optiques, il faut avoir réussi à comprendre comment fonctionne le modèle de l’agent artificiel pour pouvoir exploiter ses failles et construire des jeux de données antagonistes. <br/><br/>
+													Les premiers cas de jeux de données antagonistes sont apparus en 2004, lorsque des chercheurs ont étudié les techniques utilisées par les spammeurs pour contourner les filtres antispam. Depuis, ces attaques se sont multipliées et diversifiées, comme l’illustrent les exemples présentés sur cette page. <br/><br/>
+													Les exemples ont été divisés en trois parties, selon le type de données sur lesquelles s’appuient le système d’IA qui subit l’attaque : données <a href="#Visuelles">visuelles</a>, <a href="#Textuelles">textuelles</a> ou <a href="#Audio">audio</a>.
+												</p>
+											</section>
+
+											<section>
+												<a name="Visuelles"></a>
+												<h2 class="major"><span></span></h2>
+												<h3>Attaques des IA qui reposent sur des données visuelles</h3>
+												<p>
+													Dans le cas des données visuelles, une attaque antagoniste consiste à modifier discrètement une image (de sorte que les ajustements soient quasiment imperceptibles à l'œil humain) dans le but de fausser le résultat d’une tâche lorsqu’elle est soumise à un agent artificiel (par exemple, l’image est mal classée lorsqu’elle est soumise à un classifieur alors qu’elle était correctement classée avant d’avoir été modifiée). <br/><br/>
+
+													La plupart des attaques contre l’IA ont lieu sur des réseaux de neurones qui s’appuient sur des données visuelles. Il y a deux raisons à cela. Premièrement, la vision par ordinateur est un des domaines les plus compliqués à protéger (notamment à cause de la vastitude de l’ensemble des données qui peuvent servir d’entrée). Deuxièmement, les attaques sont motivées par un gain, or une grande partie des applications actuelles de l’IA reposent sur des tâches visuelles telles que la reconnaissance d’objets ou la classification d’images. <br/><br/>
+
+													Un exemple très simple serait le suivant. On considère un réseau de neurones convolutionnel auquel on donne en entrée une image et pour lequel on obtient en sortie l’appartenance à une catégorie. Par exemple, une image de cochon en entrée devrait se voire attribuer la catégorie "pig" en sortie. <br/><br/>
+													Un agresseur peut apporter aux données d’entrée du réseau de neurone quelques modifications, par exemple un peu de bruit de faible amplitude, délibérément pour que le modèle commette une erreur. Sur l'exemple ci-dessous, l'image du cochon bruitée se voit catégoriser comme avion de ligne. Ce résultat est d'autant plus perturbant pour nous humains qu'on ne voit presque pas de différences entre l'image bruitée et l'image normale du cochon.</p>
+
+													<span class="image centered">><img src="images/AAVpig.jpg" alt="AAV_exemple1" /></span>
+
+													<p>L’enjeu n’est pas très important sur l’exemple ci-dessus, mais peut rapidement le devenir en fonction du contexte et de la confiance qu'on accorde aux réultats produits par l'intelligence artificielle. <br/><br/>
+
+													Voici le même type d’attaque mais cette fois-ci sur un exemple médical. Il s’agit d’images dermatoscopiques de nævus mélanocytaires (grosso modo des tumeurs pigmentées de la peau). </p>
+
+													<span class="image centered">><img src="images/AAVmedical.jpg" alt="AAV_exemple2" /></span>
+
+													<p>L'utilisation réelle de ces attaques peut être assez néfaste. Cet exemple permet aussi de mettre en avant le fait que, s’il n’est pas très sécurisé (ie pas suffisamment bien entraîné), le réseau de neurones peut être dupé plus simplement qu’en ajoutant du bruit, par exemple avec des rotations d’images.
+													<br/><br/>
+													On pourrait penser qu’il suffit de mieux protéger les données en entrée des modèles pour éviter ce type d’attaques. Outre le fait que rien ne peut être parfaitement protégé (hacks, incidents, fuites de données, droits d’accès mal gérés…), ce n’est pas toujours possible en fonction du contexte. Dans le cas des voitures autonomes par exemple, l’environnement entier dans lequel la voiture se trouve peut devenir une donnée d’entrée des modèles d’IA par le biais des caméras et capteurs. Ainsi le bruit utilisé pour créer des données antagonistes n’a pas besoin d’être ajouté à l’image prise par la caméra de la voiture mais peut directement être ajouté dans l’environnement. Cela peut par exemple prendre la forme d’un autocollant ou d’une peinture spéciale apposé par un agresseur sur des panneaux de signalisation.</p>
+
+													<span class="image centered">><img src="images/AAVvoiture2.jpg" alt="AAV_exemple3" /></span>
+
+													<p>Dans cet exemple, la voiture autonome qui passe devant un panneau trafiqué ne verra pas la bonne information (par exemple un « cédez le passage » à la place d’un « stop » ou une limitation de vitesse différente). <br/><br/>
+
+													Pour finir sur les attaques antagonistes portant sur des données visuelles, voici un dernier exemple dans le domaine de la reconnaissance faciale et d'objets avec un peu plus de détails sur l’aspect technique de l’attaque. Comme le montre l'image ci-dessous, il existe des lunettes qui trompent les logiciels de reconnaissance faciale en leur faisant croire qu’on est quelqu'un d'autre.</p>
+												
+													<span class="image centered">><img src="images/AAVrec_faciale.jpg" alt="AAV_exemple4" /></span>
+
+													<p>Ainsi, grâce aux lunettes antagonistes qu’elles portent, les personnes sur les images en haut seront perçues par des agents artificiels comme les personnes présentées sur les images en dessous.
+													Les systèmes d’IA utilisés en reconnaissance faciale reposent sur des réseaux de neurones profonds qui analysent de grandes quantités de données pour en extraire des motifs récurrents. Ils s’appuient sur des concepts de plus en plus abstraits au fur et à mesure qu’on avance dans les couches du réseau de neurones (les premières couches du réseau mesurent des paramètres interprétables tels que la distance entre les pupilles d'une personne ou l'inclinaison de ses sourcils ou de ses narines, alors que les dernières couches cherchent simplement des motifs de pixels et ne comprennent pas les visages comme nous). Si un agresseur sait quels motifs abstraits sont recherchés sur ces dernières couches déterminantes, il peut facilement les tromper pour qu'ils voient d’autres visages en jouant sur ces motifs abstraits. C’est cette abstraction progressive de l’image par le réseau de neurones qui explique que les lunettes puissent tromper entièrement la reconnaissance alors même qu’elles ne recouvrent que 6.5% des pixels de l’image.
+													<br/><br/>
+													Plus généralement, ce même principe de motif antagoniste est utilisé pour contrer la reconnaissance de personnes et d’objets. Les images suivantes montrent une personne détectée (à gauche) ou non (à droite) en fonction de la présence d'un motif antagoniste. </p>
+													
+													<span class="image centered">><img src="images/AAVbox.jpg" alt="AAV_exemple5" /></span>
+
+
+													<p>Il est intéressant de noter que, bien que les lunettes antagonistes soient difficiles à concevoir (elles reposent sur une fine compréhension du modèle), elles ne coûtent que quelques euros à produire. D’ailleurs, on peut trouver en ligne des t-shirts avec des motifs antagonistes qui permettent à priori d’éviter certaines caméras de surveillance (et on peut supposer également les caméras des voitures autonomes, attention en traversant…).</p>
+													
+													<span class="image centered">><img src="images/AAVtshirt.jpg" alt="AAV_exemple6" /></span>
+
+													 
+													<p>Quelques précisions : bien que les lunettes dupent les systèmes de reconnaissance faciale dans le sens où elles cachent l’identité des personnes, les résultats sont plus mitigés lorsqu’il s'agit d'usurper l'identité d'autres personnes. Par ailleurs, elles ne sont pas très discrètes et leur efficacité n’est pas démontrée dans tous les contextes (distance au système de reconnaissance, différentes conditions d'éclairage…). Il en va de même pour le tshirt (cf disclaimer sur l'image). 
+
+												</p>
+											</section>
+
+											<section>
+												<h3>Un petit résumé</h3>
+												<p>
+													- La plupart des systèmes d’IA pour la classification ou reconnaissance d’objets à partir d’images sont vulnérables aux attaques antagonistes. <br/>
+													- Premier élément marquant des attaques antagonistes : en général, les changements apportés par les agresseurs sur les données sont assez discrets (voir dans certains cas invisibles pour nous), et pourtant ils entrainent des erreurs flagrantes de la part des modèles d’IA. <br/>
+													- Deuxièmement élément marquant des attaques antagonistes : celui qui commet l’attaque n’a pas besoin d’interférer avec le modèle (il doit juste connaître son architecture) ni d’avoir accès aux données d’apprentissage, puisque l’attaque porte sur les données de test et peut être exécutée simplement par ajout de bruit.
+												</p>
+											</section>
+
+											<section>
+												<a name="Textuelles"></a>
+												<h2 class="major"><span></span></h2>
+												<h3>Attaques des IA qui reposent sur des données textuelles</h3>
+												<p>
+													On présente ici deux exemples d’attaques antagonistes cette fois-ci sur des systèmes d’AI qui reposent sur des données textuelles. C’est donc plutôt l’apprentissage automatique relatif au domaine du NLP (Natural Language Processing, Traitement du Langage Naturel) qui est visé. <br/><br/>
+
+													Les exemples choisis concernent l’analyse de sentiments, une tâche classique en NLP (souvent utilisée pour les critiques de films et livres). L’IA prend en entrée un texte et renvoie en sortie une catégorie (dans notre cas, « positif » ou « négatif ») en fonction du contenu et de la tonalité du texte. Dans le cadre de l’analyse de sentiments, une attaque antagoniste consiste à modifier légèrement les données textuelles pour influencer la catégorie renvoyée par le système artificiel. <br/><br/>
+
+													Les attaques peuvent avoir différentes granularités. Le premier exemple présente des modifications à l’échelle des mots, le deuxième à l’échelle des caractères.</p>
+													
+													<span class="image centered">><img src="images/AAT1.jpg" alt="AAT_exemple1" /></span>
+
+													<p>On voit sur ce premier exemple que, tout en conservant la grammaire et le sens original de la phrase, la modification de deux mots (« contrived » devient « engineered » et « totally » devient « fully ») suffit à fausser le résultat de la classification (le label « Negative » devient « Positive » alors que la phrase reste négative).</p>
+													
+													<span class="image centered">><img src="images/AAT1.jpg" alt="AAT_exemple2" /></span>
+
+													<p>De même, sur ce deuxième exemple, la transformation de deux lettres en nombres et l’ajout d’un espace modifient entièrement le résultat de la classification (le label « Negative » devient « Positive » alors qu’il s’agit clairement d’une critique négative), tout cela en conservant un aspect lisible et humain. <br/><br/>
+
+													Comme pour les données visuelles, on remarque que les modifications réalisées pour ces attaques antagonistes sont relativement minimes par rapport à l’impact qu’elles ont sur les résultats produits par l’IA. <br/><br/>
+
+													Les données antagonistes de ces exemples ne sont pas créées arbitrairement. Tout comme pour les données visuelles, il faut concevoir correctement le bruit (ie déterminer quels mots ou lettres modifier et par quoi les modifier) à partir de la connaissance du fonctionnement des modèles qui réalisent la tâche. <br/><br/>
+													Jin (un chercheur au MIT) a réussi à créer TextFooler, un système capable, pour un ensemble de modèles d’apprentissage automatique donné, d’identifier dans un texte les mots qui influenceront le plus la prédiction du modèle et de sélectionner pour ces mots des synonymes correspondant au contexte. Autrement dit, il a automatisé pour un ensemble de modèles de NLP couramment utilisés la création de jeu de données antagonistes.  <br/><br/>
+
+													Les deux exemples choisis portaient sur l’analyse de sentiment, mais les attaques antagonistes existent pour d’autres tâches liées au NLP (par exemple pour contourner les filtres contre les contenus abusifs développés par les réseaux sociaux). 
+												</p>
+											</section>
+											<section>
+												<h3>Un petit résumé</h3>
+												<p>
+													- Les données textuelles sont également soumises aux attaques antagonistes.<br/>
+													- Au même titre qu’il y avait plusieurs possibilités d’attaque pour les données visuelles (rotation des images, ajout de bruit…), il existe différents angles d’attaque pour les données textuelles (synonymes, modification de caractères…). <br/>
+													- Des systèmes qui automatisent la création de jeu de données antagonistes émergent.
+												</p>
+											</section>
+
+											<section>
+												<a name="Audio"></a>
+												<h2 class="major"><span></span></h2>
+												<h3>Attaques des IA qui reposent sur des données audio</h3>
+												<p>
+													Cette dernière partie concernant les attaques antagonistes porte sur les systèmes d’IA fonctionnant à partir de données audio. Les systèmes à commande vocale (relatifs au domaine de la reconnaissance automatique de la parole) sont largement déployés aujourd’hui. Au-delà de Siri, Alexa ou Cortana, il s’agit de systèmes qui sont très utilisés dès qu’il y a des besoins en traduction instantanée ou en transcription écrite de paroles. Ces systèmes disposent d'une certaine marge au niveau de l’amplitude et la fréquence des données sonores acceptées en entrée (pour s’adapter à différents locuteurs) qu'une personne malveillante peut exploiter.</p>
+													
+													<span class="image centered">><img src="images/AAAschema.jpg" alt="AAA_schema" /></span>
+
+													<p>Ainsi, en ajoutant quelques distorsions à un fichier audio normal d’un humain qui parle, un agresseur peut tromper les algorithmes d’IA pour qu'ils reconnaissent une phrase différente de celle prononcée par l’humain. Comme pour les cas précédents, ce bruit peut être généré de telle manière qu'il soit presque imperceptible pour nous humains en tenant compte des effets de masquage de la perception humaine décrits par des modèles psychoacoustiques de l'audition humaine. Par exemple, un bruit pourrait être ajouté au signal audio d’un message télévisé ou diffusé à la radio. Tous les systèmes qui fonctionnent par commande vocale qui recevraient ce signal truqué interprèteraient le bruit que nous ne sommes pas capables d’entendre et exécuteraient l’ordre qu’il encode à notre insu. On peut facilement imaginer des ordres malveillants (désactiver des systèmes de sécurité, commander un produit en très grandes quantité, prendre le contrôle de la domotique d’une maison, envoyer des messages…). Etant donné qu’un signal audio peut facilement être diffusée à une large audience, et avec l’utilisation croissante des systèmes à commande vocale, ces attaques pourraient se multiplier sans mesures de sécurité pour les contrer. </p>
+													
+													<span class="image centered">><img src="images/AAAexemple.jpg" alt="AAA_exemple" /></span>
+
+													<p>
+													<a href="https://adversarial-attacks.net/" id="logo">Ce site</a> fournit des exemples avec des clips audio et différents bruits faiblement audibles pour illustrer ce type d’attaques.
+												</p>
+											</section>
+											<section>
+												<h3>Un petit résumé</h3>
+												<p>
+													- Les IA reposant sur des données audio sont également vulnérables aux attaques antagonistes. <br/>
+													- Une fois le bruit malveillant conçu, l’attaque peut être largement déployée. 
+												</p>
+											</section>
+
+										
+										</article>
+
+								</div>
+							</div>
+							<div class="col-12">
+								
+								<!-- Features -->
+									<section class="box features">
+										
+										<h2 class="major"><span>Conclusion de la partie 1</span></h2>
+										<section>
+												<p>
+													Les attaques antagonistes, qui reposent sur des entrées délibérément créées pour tromper ou duper les algorithmes d’apprentissage automatique, concernent tous types de données et peuvent avoir un impact négatif conséquent quel que soit le secteur. <br/><br/>
+													Indépendamment des attaques intentionnelles, l’IA présente d’autres failles ou limites qui sont explorées dans les parties suivantes. 
+												</p>
+										</section>
+										
+										<div>
+											<div class="row">
+																							
+												<div class="col-12">
+													<ul class="actions">
+														<li><a href="partie2.html" class="button large">Partie 2</a></li>
+														<li><a href="index.html" class="button alt large">Accueil</a></li>
+													</ul>
+												</div>
+
+											</div>
+										</div>
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-12">
+
+								<!-- About -->
+									<section>
+										<h2 class="major"><span>Credit</span></h2>
+										<p>
+											Ce site a été réalisé à partir d'un template "TXT" conçu par <a href="http://twitter.com/ajlkn">AJ</a> pour <a href="http://html5up.net">HTML5 UP</a> dans le cadre du MOS 4.4 "Nouvelles Technologie de l'Information et de la Communication" de l'ECL | Laetitia Haye
+										</p>
+									</section>
+
+							</div>
+							
+						</div>
+
+						<!-- Copyright -->
+							<!--<div id="copyright">
+								<ul class="menu">
+									<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								</ul>
+							</div> -->
+
+					</div>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
